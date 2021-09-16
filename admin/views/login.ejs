@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <%- include('navbar1') %>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/login" method="POST">
+                <h3 class="mt-3">Log in here</h3>
+                <label for="username">Username</label><br />
+                <input
+                    class="form-control form-control-sm w-25"
+                    name="username"
+                    value=""
+                    id="username"
+                /><br />
+                <label for="password">Password</label><br />
+                <input
+                    class="form-control form-control-sm w-25"
+                    name="password"
+                    type="password"
+                    value=""
+                    id="password"
+                />
+
+                <br />
+
+                <button class="btn btn-success" name="submit">Login</button>
+            </form>
+        </div>
+    </body>
+</html>

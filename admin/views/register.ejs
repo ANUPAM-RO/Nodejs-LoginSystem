@@ -1,0 +1,67 @@
+<html lang="en">
+    <%- include('navbar1') %>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3 class="m-3">Please Register your details</h3>
+            <form action="/register" method="POST">
+                <label for="Name">Name</label><br />
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value=""
+                    placeholder="Name"
+                    class="form-control form-control-sm w-25"
+                /><br />
+                <label for="email">Email</label><br />
+                <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    value=""
+                    placeholder="Email"
+                    class="form-control form-control-sm w-25"
+                /><br />
+                <label for="username">Username</label><br />
+                <input
+                    class="form-control form-control-sm w-25"
+                    name="username"
+                    value=""
+                    id="username"
+                    placeholder="Username"
+                />
+
+                <br />
+
+                <label for="password">Password</label><br />
+                <input
+                    class="form-control form-control-sm w-25"
+                    name="password"
+                    value=""
+                    id="password"
+                    type="password"
+                    placeholder="Password"
+                />
+
+                <br />
+                <label for="username">Comfirm Password:</label><br />
+                <input
+                    type="password"
+                    id="cpassword"
+                    name="cpassword"
+                    value=""
+                    placeholder="Confirm Password"
+                    class="form-control form-control-sm w-25"
+                /><br />
+
+                <button class="btn btn-success" name="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
